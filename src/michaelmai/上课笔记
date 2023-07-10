@@ -1,0 +1,130 @@
+#关键字
+- 定义：**被Java语言赋予了特殊含义，用做专门用途的字符串（或单词）**
+  - HelloWorld案例中，出现的关键字有 `class`、`public `  、 `static` 、  `void`  等，这些单词已经被Java定义好了。
+- 特点：全部关键字都是`小写字母`。
+- 关键字比较多，不需要死记硬背，学到哪里记到哪里即可。
+- 官方地址： https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
+
+##标志符
+**标识符的命名规范**（建议遵守的`软性要求`，否则工作时容易被鄙视）:
+
+```
+> 包名：多单词组成时所有字母都小写：xxxyyyzzz。
+  例如：java.lang、com.atguigu.bean
+  
+> 类名、接口名：多单词组成时，所有单词的首字母大写：XxxYyyZzz
+  例如：HelloWorld，String，System等
+  
+> 变量名、方法名：多单词组成时，第一个单词首字母小写，第二个单词开始每个单词首字母大写：xxxYyyZzz
+  例如：age,name,bookName,main,binarySearch,getName
+  
+> 常量名：所有字母都大写。多单词时每个单词用下划线连接：XXX_YYY_ZZZ
+  例如：MAX_VALUE,PI,DEFAULT_CAPACITY
+```
+
+
+注意：在起名字时，为了提高阅读性，要尽量有意义，“见名知意”。
+
+> 更多细节详见《代码整洁之道_关于标识符.txt》《阿里巴巴Java开发手册-1.7.1-黄山版》
+
+##变量
+- 注意变量的作用域～
+- 变量需要先定义（声明类型）！ 然后再赋值（可多次变更值，但类型要相同）
+变量的概念：
+
+- 内存中的一个存储区域，该区域的数据可以在同一类型范围内不断变化
+
+- 变量的构成包含三个要素：`数据类型`、`变量名`、`存储的值`
+
+- Java中变量声明的格式：`数据类型 变量名 = 变量值`
+Java 中的变量按照数据类型来分类，
+基本数据类型（8种）：
+    
+    整形：关键字: byte\short\int \ long
+    
+    浮点型：float\ double
+    
+    字符型:char
+    
+    布尔型: boolean
+    
+Java变量的分类、自动类型提升和强制类型转换
+
+https://blog.csdn.net/m0_46619073/article/details/121237026 
+
+
+##  循环语句
+
+- 理解：循环语句具有在`某些条件`满足的情况下，`反复执行`特定代码的功能。
+
+- 循环结构分类：
+  - for 循环
+  - while 循环
+  - do-while 循环 
+
+- 循环结构`四要素`：
+
+  - 初始化部分
+  - 循环条件部分
+  - 循环体部分
+  - 迭代部分
+
+
+一、无限循环
+格式
+
+while(true){
+    循环体；
+}
+for(;;){
+    循环体；
+}
+
+
+面向对象完成具体功能的操作的三步流程（非常重要）
+1. 创建类，并设计类的内部成员（属性、方法）
+2. 创建类的对象，比如：Phone p1 = new Phone();
+3. 通过对象，调用其内部声明的属性或者方法，完成相关的功能
+
+栈stack:方法内定义的变量，存放在栈中： eg 
+public static void main(String[] args){
+Person p1 = new Person()
+}
+
+heap堆：new 出来的结构（比如数据实体、对象的实体）。
+包括对象中的属性。
+
+方法区： 存放类的模板，比如Person类的模板
+
+方法声明的格式（重要
+）
+
+
+83 面向对象基础 方法应用4：递归方法
+https://www.youtube.com/watch?v=XaOs2PfY5Eo&list=PLmOn9nNkQxJG_AbAUeyAPH3fO0i_APAM9&index=83
+
+
+调用类方便～
+eg:
+package michaelmai
+
+
+import 就是导入某个包下的某个类方法～
+
+
+开始刷题～
+
+class Solution {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        
+    }
+}
+
+
+
+
+
+
+
+
+
